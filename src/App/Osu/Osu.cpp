@@ -134,7 +134,7 @@ Osu::Osu()
 	openvr->setDrawCallback( fastdelegate::MakeDelegate(this, &Osu::drawVR) );
 	if (openvr->isReady()) // automatically enable VR mode if it was compiled with OpenVR support and is available
 		osu_vr.setValue(1.0f);
-	env->setWindowTitle("McOsu");
+	env->setWindowTitle("FPoSu");
 	env->setCursorVisible(false);
 	engine->getConsoleBox()->setRequireShiftToActivate(true);
 	engine->getSound()->setVolume(osu_volume_master.getFloat());
